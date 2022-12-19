@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit',sans-serif;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+   background-color: hsl(216, 50%, 16%);
+   width: 90%;
+   height: 90%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   border-radius: 15px;
+   box-shadow: 0px 5px 20px 15px hsl(220, 54%, 11%);
+   
+}
+
+.img-holder{
+    width: 85%;
+    height: 50%;
+}
+
+.main-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content-box{
+    margin-top: 5%;
+    width: 85%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2.heading{
+    color: hsl(0, 0%, 100%);
+}
+
+h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+p.description{
+    color: hsl(215, 51%, 70%);
+}
+
+.price-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-time > .price{
+    color: hsl(178, 100%, 50%);
+}
+
+.price-time > .time{
+    color: hsl(215, 51%, 70%);
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    
+}
+
+.time::before{
+    content: url(/images/icon-clock.svg);
+    margin-right: 7px;
+    position: relative;
+    top: 3px;
+
+}
+
+
+
+.price::before{
+    content: url(/images/icon-ethereum.svg);
+    margin-right: 7px;
+    position: relative;
+    top:4px;
+    
+}
+
+hr{
+   height: 1px;
+   background-color :hsl(215, 32%, 27%);
+   border: none;
+   
+
+}
+
+.info > p{
+    color: hsl(215, 51%, 70%);
+}
+
+.info > p > a{
+    text-decoration: none;
+    color:hsl(0, 0%, 100%) ;
+    cursor: pointer;
+}
+
+.info > p > a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.info > img{
+   width: 13%;
+   border: 1px solid white;
+   border-radius: 100%;
+   margin-right: 10px;
+}
+.img-holder > .main-img{
+    z-index: -1;
+}
+
+.img-holder > .eye-v{
+    position: relative;
+    z-index: 1;
+    background-color: rgba(127, 255, 212, 0.568);
+    opacity: 0%;
+    right: -0.8%;
+    bottom: 107%;
+    padding: 43%;
+    border-radius: 10px;
+}
+
+.eye-v:hover{
+    opacity: 70%;;
+    cursor: pointer;
+
+}
+
+
+
+@media(min-width:1240px){
+    .container{
+        
+    height: 60%;
+    width: 30%;
+}
+  .img-holder{
+    width: 80%;
+  }
+}
+
+@media (min-height:900px){
+    .container{
+        height:75%;
+    }
+   
+}   
+
+@media (min-width:1440px){
+    .eye-v{
+        top: -103%;
+        }
+}
+
+
+   
+
